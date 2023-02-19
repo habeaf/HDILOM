@@ -1,0 +1,25 @@
+{
+  "name": "Felix",
+  "manifest_version": 3,
+  "version": "1.0.0",
+  "description": "Felix is a chrome extension that can able to replace images with Felix AI version.",
+  "permissions": ["activeTab", "tabs", "storage", "cookies", "unlimitedStorage"],
+  "content_scripts": [
+    {
+      "matches": ["*://*/*"],
+      "js": ["manipulation.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "action": {
+    "default_title": "Felix Popup",
+    "default_popup": "./Popup/index.html"
+  },
+  "options_page": "./Setup/index.html",
+  "host_permissions": ["*://*/*"],
+  "icons": {
+    "16": "./public/images/logo-16x16.png",
+    "48": "./public/images/logo-32x32.png",
+    "128": "./public/images/logo-192x192.png"
+  }
+}

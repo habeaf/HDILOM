@@ -1,0 +1,46 @@
+.setup-page-wrapper {
+  width: 500px;
+  height: 500px;
+  padding: 35px;
+  border: 1px solid black;
+
+  .setup-page {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    > .description {
+      padding-top: 20px;
+      font-weight: bold;
+    }
+
+    > .boxes {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 35px;
+    }
+
+    > .setup-page-bottom-description {
+      padding-top: 35px;
+      text-align: center;
+    }
+
+    > .ready-button {
+      margin-top: 35px;
+      background: #c6cdbc;
+      box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+      border-radius: 5px;
+      width: 150px;
+      height: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: bold;
+      font-size: 20px;
+      cursor: pointer;
+    }
+  }
+}
